@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title> Moto Partes NAC - @Page.Title</title>
+        <link href="~/Content/Site.css" rel="stylesheet" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+        <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+        @RenderSection("Scripts", required: false)
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                @*<p class="site-title"><a href="~/">Fourth NANS</a></p>*@
+                <nav>
+                    <ul>
+                        <li><a href="~/">Inicio</a></li>
+                        <li><a href="~/About">Acerca de nosotros</a></li>
+                        <li><a href="~/video">Video</a></li>
+                        <li><a href="~/usuario.vbhtml">Usuario Visual</a></li>
+                        <li><a href="~/Cambio">Usuario C#</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="body">
+                @RenderBody()
+            </div>
+            <footer>
+                &copy;@DateTime.Now.Year - Moto Partes NAC
+            </footer>
+        </div>
+    </body>
+</html>
